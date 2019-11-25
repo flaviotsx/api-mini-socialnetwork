@@ -15,5 +15,3 @@ const upload = ({ stream, mimetype }) => {
 };
 
 module.exports = { upload };
-
-module.exports = { upload };
