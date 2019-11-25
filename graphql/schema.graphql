@@ -1,0 +1,21 @@
+type Post {
+  id: String
+  description: String
+  picture: String
+  createdAt: String
+  claps: Int
+}
+
+input addPostInput {
+  picture: Upload
+  description: String!
+}
+
+type Query {
+  posts: [Post]
+}
+
+type Mutation {
+  addPost(post: addPostInput!): Post
+  clap(PostId: String): Post
+}
